@@ -10,11 +10,16 @@ type RatingPropsType = {
     value: 0 | 1 | 2 | 3 | 4 | 5
 }
 
-export function UncontrolledRating() {
+type UncontrolledRatingType = {
+    defaultValue?: number
+    onChange?: (value: number) => void
+}
+
+export function UncontrolledRating(props: UncontrolledRatingType) {
 
     console.log('Rating rendered')
 
-    let [value, setValue] = useState(0)
+    let [value, setValue] = useState(props.defaultValue ? props.defaultValue : 0)
 
     return (
         <div>

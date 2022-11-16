@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 
 type OnOffType = {
-    setOn: (on: boolean) => void
+    defaultOn?: boolean
 }
 
 export const UncontrolledOnOff: React.FC<OnOffType> = (props) => {
 
     console.log('UncontrolledOnOff rendering')
 
-    let [on, setOn] = useState(false)
+    let [on, setOn] = useState(props.defaultOn ? props.defaultOn : false)
 
     const onStyle = {
         width: '40px',
@@ -34,11 +34,9 @@ export const UncontrolledOnOff: React.FC<OnOffType> = (props) => {
     }
     const onClicked = () => {
         setOn(true)
-        props.setOn(true)
     }
     const offClicked = () => {
         setOn(false)
-        props.setOn(false)
     }
 
     return (
