@@ -24,10 +24,10 @@ function App() {
     return (
         <div style={{margin: '30px'}}>
             {/*<AppTitle title={'This is APP Component'}/>*/}
-            <Accordion title={'Menu'} collapsed={collapsed} setCollapsed={setCollapsed}/>
+            {/*<Accordion title={'Menu'} collapsed={collapsed} setCollapsed={setCollapsed}/>*/}
             {/*<Accordion title={'List'} collapsed={true}/>*/}
             {/*<AppTitle title={'Hello'}/>*/}
-            <Rating value={ratingValue} setRating={setRatingValue}/>
+            {/*<Rating value={ratingValue} setRating={setRatingValue}/>*/}
             {/*<Rating value={1}/>*/}
             {/*<Rating value={2}/>*/}
             {/*<Rating value={3}/>*/}
