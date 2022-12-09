@@ -1,0 +1,33 @@
+.select .main {
+    border: 1px solid black;
+    padding: 5px;
+    display: inline-block;
+    min-width: 50px;
+    min-height: 20px;
+}
+
+.main:hover {
+    cursor: pointer;
+}
+
+.items {
+    /*padding: 5px;*/
+    margin-top: 5px;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.item {
+    padding: 5px
+}
+
+.active {
+    background: #1ea7fd;
+    color: #fff;
+}
+
+.item:hover {
+    /*background: #1ea7fd;*/
+    /*color: white;*/
+    cursor: pointer;
+}
