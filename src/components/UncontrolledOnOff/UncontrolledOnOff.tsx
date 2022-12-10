@@ -4,7 +4,7 @@ type OnOffType = {
     defaultOn?: boolean
 }
 
-export const UncontrolledOnOff: React.FC<OnOffType> = (props) => {
+export const UncontrolledOnOff: React.FC<OnOffType> = React.memo((props) => {
 
     console.log('UncontrolledOnOff rendering')
 
@@ -46,4 +46,4 @@ export const UncontrolledOnOff: React.FC<OnOffType> = (props) => {
             <div style={indicatorStyle}></div>
         </div>
     )
-}
+})

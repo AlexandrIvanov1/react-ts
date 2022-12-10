@@ -11,7 +11,7 @@ type ItemType = {
     value: string
 }
 
-export function Select(props: SelectWithDivType) {
+export const Select = React.memo((props: SelectWithDivType) => {
 
     const [active, setActive] = useState(false)
     const [hoveredItem, setHoveredItem] = useState(props.value)
@@ -80,4 +80,4 @@ export function Select(props: SelectWithDivType) {
             </div>
         </>
     );
-}
+})
